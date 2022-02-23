@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\Spring boot_HIT_2022\.metadata\.plugins\org.eclipse.jdt.core
+4224210897.index
