@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
-public class UserAPIController {
+public class UserController {
     @Autowired
     private UserRepository userRepository;
 
@@ -40,19 +40,16 @@ public class UserAPIController {
         return ResponseEntity.status(HttpStatus.CREATED).body("Đã tạo thành công");
     }
 
-    @PatchMapping("/{id}")
-    public ResponseEntity<?> editUserById(
-            @PathVariable("id") Long id,
-            @RequestBody UserDTO userDTO
-    ) {
-        User user = userRepository.getById(id);
-        user.setFullName(userDTO.getFullName());
-        user.setUsername(userDTO.getUsername());
-        user.setPassword(userDTO.getPassword());
-
-        //save lại
-        userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.OK).body("Đã sửa thành công");
-    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
