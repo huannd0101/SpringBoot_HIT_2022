@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71ef9aa7-2efa-4752-9f00-d2cf66a5687c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/controllers/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/java/com/hit/btvn_b4/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/templates/confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVN_B4/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/Buoi41Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/exception/DuplicateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/java/com/hit/buoi4_1/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Buoi4_1/src/test/java/com/hit/buoi4_1/Buoi41ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hit/buoi4_2/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hit/buoi4_2/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hit/buoi4_2/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hit/buoi4_2/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVN_B3/src/main/java/com/example/btvn_b3/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Demo/src/RunMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Demo/src/ThiSinh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Demo/src/ThiSinhKhoiA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Demo/src/ThiSinhKhoiC.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="269WfNw4GxunPAUm3Pvye3dPjOk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BTVN_B4" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager">
+    <configuration name="Buoi42Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Buoi4_2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hit.buoi4_2.Buoi42Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71ef9aa7-2efa-4752-9f00-d2cf66a5687c" name="Changes" comment="" />
+      <created>1646836386856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646836386856</updated>
+      <workItem from="1646836388259" duration="2916000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

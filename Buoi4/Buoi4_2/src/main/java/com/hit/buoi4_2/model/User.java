@@ -1,10 +1,25 @@
-package com.example.btvn_b3;
+package com.hit.buoi4_2.model;
 
+import org.hibernate.annotations.Nationalized;
+
+import javax.persistence.*;
+
+@Entity //spring biet day la 1 thuc the (bảng trong sql)
+@Table(name = "users") // đặt tên cho table trong sql
 public class User {
+    @Id //khóa chính
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // tự động tăng id
+    @Column(name = "id") // đặt tên cho cột - Nếu k thì sẽ lấy tên của thuộc tính làm tên cột
     private Long id;
+
     private String username;
     private String password;
-    private String fullName;
+
+    @Nationalized //viết tiếng việt (nvarchar)
+    private String fullName; //full_name
+    //time tạo
+    //time update
+    //status
 
     public User() {
     }
@@ -14,24 +29,6 @@ public class User {
         this.username = username;
         this.password = password;
         this.fullName = fullName;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (!username.equals(user.username)) return false;
-        return password.equals(user.password);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = username.hashCode();
-        result = 31 * result + password.hashCode();
-        return result;
     }
 
     public Long getId() {

@@ -1,10 +1,13 @@
-package com.example.btvn_b3;
+package com.hit.buoi4_1;
 
 public class User {
     private Long id;
     private String username;
     private String password;
     private String fullName;
+    //time tạo
+    //time update
+    //status
 
     public User() {
     }
@@ -14,24 +17,6 @@ public class User {
         this.username = username;
         this.password = password;
         this.fullName = fullName;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (!username.equals(user.username)) return false;
-        return password.equals(user.password);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = username.hashCode();
-        result = 31 * result + password.hashCode();
-        return result;
     }
 
     public Long getId() {
