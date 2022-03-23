@@ -6,10 +6,12 @@ import com.hit.buoi5.exception.NotFoundException;
 import com.hit.buoi5.model.Address;
 import com.hit.buoi5.model.User;
 import com.hit.buoi5.repository.UserRepository;
+import io.swagger.annotations.*;
 import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/users")
+@CrossOrigin(origins = "*")
+@Api("User APIs")
 public class UserController {
     @Autowired
     UserRepository userRepository;
@@ -30,9 +34,17 @@ public class UserController {
         PATCH	: /api/v1/users/{id}
         DELETE	: /api/v1/users/{id}
     */
-
+    @ApiOperation(value = "Xem danh sách user", response = List.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Thành công"),
+            @ApiResponse(code = 401, message = "Chưa xác thực"),
+            @ApiResponse(code = 1000, message = "Chả có gì"),
+    })
     @GetMapping
-    public ResponseEntity<?> getAllUser(@RequestParam(value = "page", required = false) Integer page) {
+    public ResponseEntity<?> getAllUser(
+            @ApiParam(value = "Page có thể chuyền vào", required = false)
+            @RequestParam(value = "page", required = false) Integer page
+    ) {
         List<User> users;
         if(page == null) {
             users = userRepository.findAll(Sort.by("username").ascending());
