@@ -1,0 +1,26 @@
+
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=buoi11
+    username: sa
+    password: 123
+  data:
+    cassandra:
+      schema-action: create_if_not_exists
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        globally_quoted_identifiers: true
+        enable_lazy_load_no_trans: true
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+logging:
+  level:
+    org:
+      springframework:
+        web: TRACE
