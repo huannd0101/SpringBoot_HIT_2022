@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet id="20220622191600" author="huan.nguyendinh">
+
+        <createTable tableName="users">
+            <column name="id" type="bigint"/>
+            <column name="age" type="int"/>
+            <column name="email" type="nvarchar(255)"/>
+            <column name="password" type="nvarchar(255)"/>
+            <column name="first_name" type="nvarchar(255)"/>
+            <column name="last_name" type="nvarchar(255)"/>
+            <column name="active_flag" type="bit(1)"/>
+            <column name="delete_flag" type="bit(1)"/>
+            <column name="created_date" type="bigint"/>
+            <column name="created_by" type="nvarchar(255)"/>
+            <column name="last_modified_date" type="bigint"/>
+            <column name="last_modified_by" type="nvarchar(255)"/>
+        </createTable>
+
+        <addPrimaryKey tableName="users" columnNames="id"/>
+        <addAutoIncrement columnDataType="bigint" tableName="users" columnName="id"/>
+
+        <addNotNullConstraint tableName="users" columnName="email" columnDataType="nvarchar(255)"/>
+        <addNotNullConstraint tableName="users" columnName="password" columnDataType="nvarchar(255)"/>
+        <addNotNullConstraint tableName="users" columnName="first_name" columnDataType="nvarchar(255)"/>
+        <addNotNullConstraint tableName="users" columnName="last_name" columnDataType="nvarchar(255)"/>
+        <addNotNullConstraint tableName="users" columnName="delete_flag" columnDataType="bit(1)"/>
+        <addNotNullConstraint tableName="users" columnName="active_flag" columnDataType="bit(1)"/>
+        <addNotNullConstraint tableName="users" columnName="created_date" columnDataType="bigint"/>
+        <addNotNullConstraint tableName="users" columnName="created_by" columnDataType="nvarchar(225)"/>
+        <addNotNullConstraint tableName="users" columnName="last_modified_date" columnDataType="bigint"/>
+        <addNotNullConstraint tableName="users" columnName="last_modified_by" columnDataType="nvarchar(225)"/>
+
+        <addDefaultValue tableName="users" columnName="delete_flag" defaultValueNumeric="0"/>
+        <addDefaultValue tableName="users" columnName="active_flag" defaultValueNumeric="1"/>
+
+    </changeSet>
+
+</databaseChangeLog>

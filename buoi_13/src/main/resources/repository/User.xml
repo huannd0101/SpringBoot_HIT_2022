@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hit.buoi_13.infrastructure.repository.database.DatabaseUserRepository">
+
+    <resultMap id="userResultMap" type="com.hit.buoi_13.domain.dto.UserDto">
+        <association property="id" javaType="java.lang.Long">
+            <result column="id"/>
+        </association>
+        <association property="age" javaType="java.lang.Integer">
+            <result column="age"/>
+        </association>
+        <association property="email" javaType="java.lang.String">
+            <result column="email"/>
+        </association>
+        <association property="password" javaType="java.lang.String">
+            <result column="password"/>
+        </association>
+        <association property="firstName" javaType="java.lang.String">
+            <result column="first_name"/>
+        </association>
+        <association property="lastName" javaType="java.lang.String">
+            <result column="last_name"/>
+        </association>
+    </resultMap>
+
+    <select id="findAllUser" resultMap="userResultMap">
+        select
+            u.id ,
+            u.age,
+            u.email,
+            u.`password`,
+            u.first_name,
+            u.last_name
+        from users u
+        where age > #{item.age};
+    </select>
+
+</mapper>
+
